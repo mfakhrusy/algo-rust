@@ -1,0 +1,9 @@
+[package]
+name = "grade-school-multiplication-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies.rug]
+rug = "1.16"
+default-features = false
+features = ["integer"]
