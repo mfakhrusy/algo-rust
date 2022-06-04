@@ -24,7 +24,7 @@ fn merge_sort(arr: Vec<i32>) -> Vec<i32> {
     let sorted_left_arr = merge_sort(left.to_vec());
     let sorted_right_arr = merge_sort(right.to_vec());
 
-    let merged_array = merge(sorted_left_arr.clone(), sorted_right_arr.clone());
+    let merged_array = merge(sorted_left_arr, sorted_right_arr);
 
     return merged_array;
 }
