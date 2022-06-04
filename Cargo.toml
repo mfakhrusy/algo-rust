@@ -1,2 +1,2 @@
 [workspace]
-members = ["int_multiply"]
+members = ["int_multiply", "merge_sort"]
