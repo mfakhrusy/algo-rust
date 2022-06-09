@@ -29,24 +29,12 @@ fn merge_sort(arr: Vec<i32>) -> Vec<i32> {
     return merged_array;
 }
 
-fn merge(mut left_arr: Vec<i32>, mut right_arr: Vec<i32>) -> Vec<i32> {
+fn merge(left_arr: Vec<i32>, right_arr: Vec<i32>) -> Vec<i32> {
     let total_length = left_arr.len() + right_arr.len();
     let mut merged_array = vec![];
     let mut main_index = 0;
     let mut left_index = 0;
     let mut right_index = 0;
-
-    if total_length == 2 {
-        if left_arr[left_index] >= right_arr[right_index] {
-            merged_array.append(&mut right_arr);
-            merged_array.append(&mut left_arr);
-        } else {
-            merged_array.append(&mut left_arr);
-            merged_array.append(&mut right_arr);
-        }
-
-        return merged_array;
-    }
 
     while main_index < total_length {
         if left_arr[left_index] >= right_arr[right_index] {
