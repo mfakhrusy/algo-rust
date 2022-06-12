@@ -37,7 +37,7 @@ fn merge(left_arr: Vec<i32>, right_arr: Vec<i32>) -> Vec<i32> {
     let mut right_index = 0;
 
     while main_index < total_length {
-        if left_arr[left_index] >= right_arr[right_index] {
+        if right_arr[right_index] < left_arr[left_index] {
             merged_array.push(right_arr[right_index]);
             right_index += 1;
         } else {
