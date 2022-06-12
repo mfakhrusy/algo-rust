@@ -6,8 +6,7 @@ fn main() {
 }
 
 fn read_data(path: &str) -> Vec<i32> {
-    let raw =
-        fs::read_to_string(path).expect("unable to read file");
+    let raw = fs::read_to_string(path).expect("unable to read file");
     let data = raw
         .split("\n")
         .collect::<Vec<&str>>()
@@ -49,7 +48,6 @@ fn merge(left_arr: Vec<i32>, right_arr: Vec<i32>, total_count: &mut u32) -> Vec<
     let mut left_index = 0;
     let mut right_index = 0;
 
-
     while main_index < total_length {
         if right_arr[right_index] < left_arr[left_index] {
             merged_array.push(right_arr[right_index]);
@@ -75,4 +73,3 @@ fn merge(left_arr: Vec<i32>, right_arr: Vec<i32>, total_count: &mut u32) -> Vec<
 
     return merged_array;
 }
-
