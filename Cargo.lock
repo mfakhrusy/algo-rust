@@ -15,6 +15,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f771a5d1f5503f7f4279a30f3643d3421ba149848b89ecaaec0ea2acf04a5ac4"
 
 [[package]]
+name = "count_inversion"
+version = "0.1.0"
+
+[[package]]
 name = "gmp-mpfr-sys"
 version = "1.4.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
